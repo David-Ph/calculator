@@ -43,6 +43,9 @@ table {
 }
 
 /* MAIN */
+body{
+    background-color:gainsboro;
+}
 body, button{
     font-family: 'Orbitron', sans-serif;
 }
@@ -58,7 +61,7 @@ button:active{
     transform: translateY(4px);
 }
 .calculator-container{
-    margin: 2em auto;
+    margin: 10em auto;
     width: 80%;
     max-width: 500px;
     height: 500px;
