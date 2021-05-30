@@ -47,6 +47,8 @@ function onDigitClick(e){
     let clickedDigit = e;
 
     if(!operator){
+        // check if there's alreaay a '.' in the firstInput
+        // if yes, dont let the user to add anymore
         if(clickedDigit === '.'){
             if(firstInput.includes('.')){
                 return;
@@ -56,6 +58,8 @@ function onDigitClick(e){
         firstInput += clickedDigit
         changeDisplay(firstInput);
     }else{
+        // check if there's alreaay a '.' in the firstInput
+        // if yes, dont let the user to add anymore
         if(clickedDigit === '.'){
             if(secondInput.includes('.')){
                 return;
@@ -101,6 +105,7 @@ function clearVariables(){
     operator = '';
     equalButtonPressed = false;
 }
+
 function clearDisplay(){
     changeDisplay('0');
 }
