@@ -2,6 +2,7 @@
 // /////////////////
 
 const calculatorDisplay = document.querySelector('.calculator-display');
+const calculatorBody = document.querySelector('.calculator-body');
 
 
 //              VARIABLES
@@ -13,8 +14,8 @@ let equalButtonPressed = false;
 
 //              EVENT LISTENER
 // /////////////////////////////
-document.addEventListener('click', onButtonClick);
-document.addEventListener('keydown', onKeyDown);
+calculatorBody.addEventListener('click', onButtonClick);
+calculatorBody.addEventListener('keydown', onKeyDown);
 
 
 //              FUNCTION
