@@ -54,6 +54,9 @@ button:hover{
     border: 1px solid #fff;
     transform: scale(1.02);
 }
+button:active{
+    transform: translateY(4px);
+}
 .calculator-container{
     margin: 2em auto;
     width: 80%;
